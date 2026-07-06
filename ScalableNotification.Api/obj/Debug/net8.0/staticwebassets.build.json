@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "yZvXQR0M/7Rhbf2gvSiF9yLD4MTQ9KSpb3/i5yqvBgc=",
+  "Source": "ScalableNotification.Api",
+  "BasePath": "_content/ScalableNotification.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

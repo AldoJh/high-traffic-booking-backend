@@ -1,0 +1,6 @@
+@ScalableNotification.Api_HostAddress = http://localhost:5032
+
+GET {{ScalableNotification.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
