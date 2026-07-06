@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 using ScalableNotification.Api.Data;
 using ScalableNotification.Api.Models;
+using ScalableNotification.Api.Services;
 using System.Text.Json;
 
 namespace ScalableNotification.Api.Controllers
@@ -12,22 +13,26 @@ namespace ScalableNotification.Api.Controllers
     {
         private readonly AppDbContext _context;
         private readonly IDistributedCache _cache;
+        private readonly IRabbitMQProducer _rabbitMQProducer;
 
-        public NotificationController(AppDbContext context, IDistributedCache cache)
+        public NotificationController(AppDbContext context, IDistributedCache cache, IRabbitMQProducer rabbitMQProducer)
         {
             _context = context;
             _cache = cache;
+            _rabbitMQProducer = rabbitMQProducer; // Inisialisasi RabbitMQProducer
         }
 
         // 1. Endpoint untuk kirim notifikasi (Simpan ke Postgres)
-        [HttpPost]
-        public async Task<IActionResult> CreateNotification([FromBody] Notificationlogs notification)
+       [HttpPost]
+        public IActionResult CreateNotification([FromBody] Notificationlogs notification)
         {
             notification.CreatedAt = DateTime.UtcNow;
-            _context.Notificationlogs.Add(notification);
-            await _context.SaveChangesAsync();
+            notification.Status = "Queued in RabbitMQ";
 
-            return Ok(new { message = "Notification saved to DB!", data = notification });
+            // Lepas beban database, kirim langsung ke antrean RabbitMQ!
+            _rabbitMQProducer.SendNotificationMessage(notification);
+
+            return Ok(new { message = "Notification successfully queued!", status = notification.Status });
         }
 
         // 2. Endpoint performa tinggi (Cek Redis dulu, kalau zonk baru ke Postgres)
