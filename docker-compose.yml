@@ -26,11 +26,32 @@ services:
     image: rabbitmq:3-management-alpine
     container_name: dotnet-rabbitmq
     ports:
-      - "5672:5672"   # Port untuk aplikasi .NET mengirim pesan
-      - "15672:15672" # Port untuk Dashboard (Bisa dibuka di browser: localhost:15672)
+      - "5672:5672"   
+      - "15672:15672" 
     environment:
       RABBITMQ_DEFAULT_USER: guest
       RABBITMQ_DEFAULT_PASS: guest
+  # 4. Prometheus untuk Monitoring
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus_container
+    volumes:
+        - ./prometheus.yaml:/etc/prometheus/prometheus.yml
+    ports:
+        - "9090:9090"
+    extra_hosts:
+        - "host.docker.internal:host-gateway" 
 
+  #5. Grafana untuk Visualisasi
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana_container
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    depends_on:
+      - prometheus
 volumes:
   postgres_data:

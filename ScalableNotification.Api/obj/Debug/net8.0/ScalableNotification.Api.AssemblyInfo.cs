@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ScalableNotification.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba555f4875a3734c9f9e6d43b3e09c7099d68c06")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+faae96a6ec57b0e61e3e9355385d8f390b6516cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("ScalableNotification.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ScalableNotification.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
