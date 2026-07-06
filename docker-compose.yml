@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  # 1. Database Utama
+  postgres-db:
+    image: postgres:16-alpine
+    container_name: dotnet-postgres
+    environment:
+      POSTGRES_USER: aldo_user
+      POSTGRES_PASSWORD: aldo_password
+      POSTGRES_DB: notification_db
+    ports:
+      - "5435:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # 2. Caching Layer (Biar API Cepat)
+  redis-cache:
+    image: redis:7-alpine
+    container_name: dotnet-redis
+    ports:
+      - "6379:6379"
+
+  # 3. Message Broker (Antrean Notifikasi)
+  rabbitmq-broker:
+    image: rabbitmq:3-management-alpine
+    container_name: dotnet-rabbitmq
+    ports:
+      - "5672:5672"   # Port untuk aplikasi .NET mengirim pesan
+      - "15672:15672" # Port untuk Dashboard (Bisa dibuka di browser: localhost:15672)
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+volumes:
+  postgres_data:
