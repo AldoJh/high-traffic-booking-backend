@@ -113,3 +113,5 @@
 /home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/obj/Debug/net8.0/ScalableNotification.Api.pdb
 /home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/obj/Debug/net8.0/ScalableNotification.Api.genruntimeconfig.cache
 /home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/obj/Debug/net8.0/ref/ScalableNotification.Api.dll
+/home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/bin/Debug/net8.0/Prometheus.NetStandard.dll
+/home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/bin/Debug/net8.0/Prometheus.AspNetCore.dll

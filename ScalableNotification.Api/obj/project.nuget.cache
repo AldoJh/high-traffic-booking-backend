@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GnzbjkKxxlii9qsdivaQRCAWxB2iTRmCJXnUC+9/HuB/yFC37d5OhNyDN6JmjPTb/Zwt6J3k+CYGsWq4WOxjEw==",
+  "dgSpecHash": "GTNy5ctLz32TvvqYTZsu4mvNuGej6gJbUuhRvDHaKeZSS5uQzGOpgzK66AGaPBqhssLc5PtNOjjWKbmOj0HniA==",
   "success": true,
   "projectFilePath": "/home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/ScalableNotification.Api.csproj",
   "expectedPackageFiles": [
@@ -24,8 +24,10 @@
     "/home/Aldo/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.1/microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
     "/home/Aldo/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
     "/home/Aldo/.nuget/packages/microsoft.extensions.dependencymodel/8.0.2/microsoft.extensions.dependencymodel.8.0.2.nupkg.sha512",
+    "/home/Aldo/.nuget/packages/microsoft.extensions.http/3.1.0/microsoft.extensions.http.3.1.0.nupkg.sha512",
     "/home/Aldo/.nuget/packages/microsoft.extensions.logging/8.0.1/microsoft.extensions.logging.8.0.1.nupkg.sha512",
     "/home/Aldo/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "/home/Aldo/.nuget/packages/microsoft.extensions.objectpool/7.0.0/microsoft.extensions.objectpool.7.0.0.nupkg.sha512",
     "/home/Aldo/.nuget/packages/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg.sha512",
     "/home/Aldo/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "/home/Aldo/.nuget/packages/microsoft.openapi/1.6.14/microsoft.openapi.1.6.14.nupkg.sha512",
@@ -33,6 +35,8 @@
     "/home/Aldo/.nuget/packages/npgsql/8.0.4/npgsql.8.0.4.nupkg.sha512",
     "/home/Aldo/.nuget/packages/npgsql.entityframeworkcore.postgresql/8.0.8/npgsql.entityframeworkcore.postgresql.8.0.8.nupkg.sha512",
     "/home/Aldo/.nuget/packages/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "/home/Aldo/.nuget/packages/prometheus-net/8.2.0/prometheus-net.8.2.0.nupkg.sha512",
+    "/home/Aldo/.nuget/packages/prometheus-net.aspnetcore/8.2.0/prometheus-net.aspnetcore.8.2.0.nupkg.sha512",
     "/home/Aldo/.nuget/packages/rabbitmq.client/6.8.1/rabbitmq.client.6.8.1.nupkg.sha512",
     "/home/Aldo/.nuget/packages/stackexchange.redis/2.7.27/stackexchange.redis.2.7.27.nupkg.sha512",
     "/home/Aldo/.nuget/packages/swashbuckle.aspnetcore/6.6.2/swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
