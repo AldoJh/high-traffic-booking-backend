@@ -3,12 +3,14 @@ using Microsoft.Extensions.Caching.Distributed;
 using ScalableNotification.Api.Data;
 using ScalableNotification.Api.Models;
 using ScalableNotification.Api.Services;
+using Microsoft.AspNetCore.Authorization;
 using System.Text.Json;
 
 namespace ScalableNotification.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class NotificationController : ControllerBase
     {
         private readonly AppDbContext _context;

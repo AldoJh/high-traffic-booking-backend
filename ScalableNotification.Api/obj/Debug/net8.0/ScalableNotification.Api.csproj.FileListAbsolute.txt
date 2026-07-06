@@ -115,3 +115,12 @@
 /home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/obj/Debug/net8.0/ref/ScalableNotification.Api.dll
 /home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/bin/Debug/net8.0/Prometheus.NetStandard.dll
 /home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/bin/Debug/net8.0/Prometheus.AspNetCore.dll
+/home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/bin/Debug/net8.0/appsettings.Example.json
+/home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/home/Aldo/Documents/high-traffic-booking-backend/ScalableNotification.Api/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
